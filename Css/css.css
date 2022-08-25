@@ -1,0 +1,422 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif; 
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+       background-color: rgb(48, 46, 46);
+}
+
+p {
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+.titleIn{ 
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px;
+}
+
+.txtCont {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    margin: 50px; 
+    padding: 100px; 
+    gap: 40px;
+}
+
+.titleGe{ 
+    padding-top: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+nav ul li {
+    color: white; 
+    text-align:right; 
+    list-style-type: none;
+    position:relative; 
+    left: 350px;
+    display: inline; 
+    margin: 10px; 
+    background:none; 
+    padding-bottom: 100px; 
+    top: 50px;
+} 
+
+.fondonav { 
+    background: url(../assets/imagenes/fondonavv.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    height:220px;
+    width: 100%;
+}
+
+
+.imgA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 10px;
+} 
+
+/* CARTAS DEL INDEX */
+
+.container-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.title-cards{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card .contenido-card{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3{
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.card .contenido-card p{
+    line-height: 1.8;
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #8e8e8e;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover{
+    background: #c7c7c7;
+    color: rgb(193, 189, 189);
+}
+
+/* FIN CARTAS DEL INDEX */
+
+/* COMIENZO CONTACTO FORMULARIO */
+.titleCont{
+    padding: 1em;
+    color: white;
+}
+
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.contenedorFormInf {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    display: grid;
+}
+
+.contenedorFormInf > *{
+    padding: 1em;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #000000;
+}
+
+.contact-form form button {
+    background: #000000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #000000;
+    color: rgb(30, 29, 29);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+/* FIN CONTACTO FORMULARIO */
+
+footer {
+    display: flex; 
+    flex-direction: row;
+    justify-content:space-around; 
+    text-align: center;
+    padding: 20px; 
+}
+
+/* vista destok */
+@media only screen and (min-width: 1024px){
+
+.sectionT {
+    display: flex; 
+    flex-direction: row;
+    text-align: justify; 
+    text-align: left;
+    gap: 20px;
+    margin: 30px;
+}
+
+/* GALERIA */
+
+.containerImg{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.containerImg .imagen {
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #9390909c;
+    width: 100%;
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: black;
+    font-weight: 200px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+/* FIN GALERIA */
+
+
+
+}
+/* fin vista destok */
+
+
+/* vista mobile */
+
+@media only screen and (min-width: 0px) and (max-width:768px) {
+
+nav ul li {
+    display: table-caption;
+    gap: 5px;
+    color: white; 
+    text-align:center; 
+    list-style-type: none;  
+    margin: 3px; 
+    background:none; 
+}   
+
+.sectionT {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify; 
+    margin: 20px;
+    padding: 10px;
+}
+
+/* GALERIA */
+
+.containerImg{
+    display: flex;
+    width: 99%;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.containerImg .imagen {
+    width: 80%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #9390909c;
+    width: 100%;
+    height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: black;
+    font-weight: 200px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+/* GALERIA */
+
+
+.gridContainerIn {
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "fondonav"
+   
+    "sectionU"
+    "sectionD"
+    "sectionT"
+    "fin";
+}
+
+header.menu {grid-area: menu ;}
+div.fondonav {grid-area: fondonav;}
+section.sectionU {grid-area: sectionU;}
+section.sectionD {grid-area: sectionD;}
+section.sectionT {grid-area: sectionT;}
+footer.fin {grid-area: fin;}
+
+.gridContainerSer {
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "sectionUs"
+    "sectionDs"
+    "fin";
+}
+
+header.menu {grid-area: menu;}
+section.sectionUs {grid-area: sectionUs;}
+section.sectionDs {grid-area: sectionDs;}
+footer.fin {grid-area: fin;}
+
+}
